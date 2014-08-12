@@ -59,8 +59,8 @@ MRuby::GemBox.new do |conf|
   # Use toplevel object (main) methods extension
   conf.gem :core => "mruby-toplevel-ext"
 
-  # Generate mirb command
-  conf.gem :core => "mruby-bin-mirb"
+#  # Generate mirb command
+#  conf.gem :core => "mruby-bin-mirb"
 
   # Generate mruby command
   conf.gem :core => "mruby-bin-mruby"
@@ -73,4 +73,6 @@ MRuby::GemBox.new do |conf|
 
   # Use mruby-compiler to build other mrbgems
   conf.gem :core => "mruby-compiler"
+
+  conf.gem :git => 'https://github.com/mattn/mruby-json.git'
 end
