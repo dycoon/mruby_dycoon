@@ -59,8 +59,11 @@ MRuby::GemBox.new do |conf|
   # Use extended toplevel object (main) methods
   conf.gem :core => "mruby-toplevel-ext"
 
-  # Generate mirb command
-  conf.gem :core => "mruby-bin-mirb"
+  # Use extended toplevel object (main) methods
+  conf.gem :core => "mruby-string-utf8"
+
+#  # Generate mirb command
+#  conf.gem :core => "mruby-bin-mirb"
 
   # Generate mruby command
   conf.gem :core => "mruby-bin-mruby"
@@ -70,4 +73,9 @@ MRuby::GemBox.new do |conf|
 
   # Use extensional Kernel module
   conf.gem :core => "mruby-kernel-ext"
+
+#  # Generate mruby command
+#  conf.gem :core => "mruby-bin-mruby"
+
+  conf.gem :git => 'https://github.com/mattn/mruby-json.git'
 end
